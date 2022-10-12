@@ -7,23 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C810D71D28F1AAB30065E788 /* AddUrlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C810D71C28F1AAB30065E788 /* AddUrlViewController.swift */; };
+		C8BB5CEC28F0541500E0224A /* SiteListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BB5CEB28F0541500E0224A /* SiteListViewController.swift */; };
+		C8BB5CEF28F05CA800E0224A /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BB5CEE28F05CA800E0224A /* StorageManager.swift */; };
+		C8C1680828F4922D001D2F84 /* LinkListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C1680728F4922D001D2F84 /* LinkListViewController.swift */; };
+		C8DEA89F28F49C2D00DEBCEB /* Extension + UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DEA89E28F49C2D00DEBCEB /* Extension + UIAlertController.swift */; };
 		C8FB8BB528EF16E400FBD9E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FB8BB428EF16E400FBD9E2 /* AppDelegate.swift */; };
 		C8FB8BB728EF16E400FBD9E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FB8BB628EF16E400FBD9E2 /* SceneDelegate.swift */; };
-		C8FB8BB928EF16E400FBD9E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FB8BB828EF16E400FBD9E2 /* ViewController.swift */; };
 		C8FB8BBC28EF16E400FBD9E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8FB8BBA28EF16E400FBD9E2 /* Main.storyboard */; };
 		C8FB8BBE28EF16E500FBD9E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8FB8BBD28EF16E500FBD9E2 /* Assets.xcassets */; };
 		C8FB8BC128EF16E500FBD9E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8FB8BBF28EF16E500FBD9E2 /* LaunchScreen.storyboard */; };
+		C8FB8BCD28EF17DC00FBD9E2 /* Site.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FB8BCC28EF17DC00FBD9E2 /* Site.swift */; };
+		C8FB8BCF28EF17EC00FBD9E2 /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FB8BCE28EF17EC00FBD9E2 /* Link.swift */; };
+		C8FB8BD128EF182900FBD9E2 /* Check.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FB8BD028EF182900FBD9E2 /* Check.swift */; };
+		C8FB8BD428EF18E400FBD9E2 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = C8FB8BD328EF18E400FBD9E2 /* Realm */; };
+		C8FB8BD628EF18E400FBD9E2 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C8FB8BD528EF18E400FBD9E2 /* RealmSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C810D71C28F1AAB30065E788 /* AddUrlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUrlViewController.swift; sourceTree = "<group>"; };
+		C8BB5CEB28F0541500E0224A /* SiteListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteListViewController.swift; sourceTree = "<group>"; };
+		C8BB5CEE28F05CA800E0224A /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		C8C1680728F4922D001D2F84 /* LinkListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkListViewController.swift; sourceTree = "<group>"; };
+		C8DEA89E28F49C2D00DEBCEB /* Extension + UIAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIAlertController.swift"; sourceTree = "<group>"; };
 		C8FB8BB128EF16E400FBD9E2 /* MySiteOk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySiteOk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8FB8BB428EF16E400FBD9E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8FB8BB628EF16E400FBD9E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C8FB8BB828EF16E400FBD9E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C8FB8BBB28EF16E400FBD9E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C8FB8BBD28EF16E500FBD9E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8FB8BC028EF16E500FBD9E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C8FB8BC228EF16E500FBD9E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8FB8BCC28EF17DC00FBD9E2 /* Site.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Site.swift; sourceTree = "<group>"; };
+		C8FB8BCE28EF17EC00FBD9E2 /* Link.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Link.swift; sourceTree = "<group>"; };
+		C8FB8BD028EF182900FBD9E2 /* Check.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Check.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,12 +47,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8FB8BD628EF18E400FBD9E2 /* RealmSwift in Frameworks */,
+				C8FB8BD428EF18E400FBD9E2 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C8BB5CED28F05C9500E0224A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C8BB5CEE28F05CA800E0224A /* StorageManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C8DEA89D28F49C0E00DEBCEB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C8DEA89E28F49C2D00DEBCEB /* Extension + UIAlertController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		C8FB8BA828EF16E400FBD9E2 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +90,54 @@
 		C8FB8BB328EF16E400FBD9E2 /* MySiteOk */ = {
 			isa = PBXGroup;
 			children = (
-				C8FB8BB428EF16E400FBD9E2 /* AppDelegate.swift */,
-				C8FB8BB628EF16E400FBD9E2 /* SceneDelegate.swift */,
-				C8FB8BB828EF16E400FBD9E2 /* ViewController.swift */,
-				C8FB8BBA28EF16E400FBD9E2 /* Main.storyboard */,
-				C8FB8BBD28EF16E500FBD9E2 /* Assets.xcassets */,
-				C8FB8BBF28EF16E500FBD9E2 /* LaunchScreen.storyboard */,
+				C8DEA89D28F49C0E00DEBCEB /* Extensions */,
+				C8BB5CED28F05C9500E0224A /* Services */,
+				C8FB8BC828EF171800FBD9E2 /* Models */,
+				C8FB8BCB28EF176A00FBD9E2 /* SupportFiles */,
+				C8FB8BC928EF174100FBD9E2 /* ViewControllers */,
+				C8FB8BCA28EF175500FBD9E2 /* Storyboards */,
 				C8FB8BC228EF16E500FBD9E2 /* Info.plist */,
 			);
 			path = MySiteOk;
+			sourceTree = "<group>";
+		};
+		C8FB8BC828EF171800FBD9E2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C8FB8BCC28EF17DC00FBD9E2 /* Site.swift */,
+				C8FB8BCE28EF17EC00FBD9E2 /* Link.swift */,
+				C8FB8BD028EF182900FBD9E2 /* Check.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C8FB8BC928EF174100FBD9E2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C8BB5CEB28F0541500E0224A /* SiteListViewController.swift */,
+				C810D71C28F1AAB30065E788 /* AddUrlViewController.swift */,
+				C8C1680728F4922D001D2F84 /* LinkListViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C8FB8BCA28EF175500FBD9E2 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C8FB8BBA28EF16E400FBD9E2 /* Main.storyboard */,
+				C8FB8BBF28EF16E500FBD9E2 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		C8FB8BCB28EF176A00FBD9E2 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				C8FB8BBD28EF16E500FBD9E2 /* Assets.xcassets */,
+				C8FB8BB428EF16E400FBD9E2 /* AppDelegate.swift */,
+				C8FB8BB628EF16E400FBD9E2 /* SceneDelegate.swift */,
+			);
+			path = SupportFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +156,10 @@
 			dependencies = (
 			);
 			name = MySiteOk;
+			packageProductDependencies = (
+				C8FB8BD328EF18E400FBD9E2 /* Realm */,
+				C8FB8BD528EF18E400FBD9E2 /* RealmSwift */,
+			);
 			productName = MySiteOk;
 			productReference = C8FB8BB128EF16E400FBD9E2 /* MySiteOk.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +188,9 @@
 				Base,
 			);
 			mainGroup = C8FB8BA828EF16E400FBD9E2;
+			packageReferences = (
+				C8FB8BD228EF18E400FBD9E2 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = C8FB8BB228EF16E400FBD9E2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,9 +218,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8FB8BB928EF16E400FBD9E2 /* ViewController.swift in Sources */,
+				C810D71D28F1AAB30065E788 /* AddUrlViewController.swift in Sources */,
 				C8FB8BB528EF16E400FBD9E2 /* AppDelegate.swift in Sources */,
+				C8FB8BD128EF182900FBD9E2 /* Check.swift in Sources */,
+				C8FB8BCD28EF17DC00FBD9E2 /* Site.swift in Sources */,
+				C8BB5CEF28F05CA800E0224A /* StorageManager.swift in Sources */,
+				C8C1680828F4922D001D2F84 /* LinkListViewController.swift in Sources */,
+				C8DEA89F28F49C2D00DEBCEB /* Extension + UIAlertController.swift in Sources */,
 				C8FB8BB728EF16E400FBD9E2 /* SceneDelegate.swift in Sources */,
+				C8FB8BCF28EF17EC00FBD9E2 /* Link.swift in Sources */,
+				C8BB5CEC28F0541500E0224A /* SiteListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +382,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -323,6 +411,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -358,6 +447,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C8FB8BD228EF18E400FBD9E2 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.31.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C8FB8BD328EF18E400FBD9E2 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C8FB8BD228EF18E400FBD9E2 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		C8FB8BD528EF18E400FBD9E2 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C8FB8BD228EF18E400FBD9E2 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C8FB8BA928EF16E400FBD9E2 /* Project object */;
 }
