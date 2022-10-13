@@ -7,6 +7,7 @@
 
 import UIKit
 import RealmSwift
+import SafariServices
 
 final class LinkListViewController: UITableViewController {
 
@@ -19,6 +20,13 @@ final class LinkListViewController: UITableViewController {
 
         let editButton = editButtonItem
         navigationItem.rightBarButtonItem = editButton
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let checkListVC = segue.destination as? CheckListViewController,
+              let link = sender as? Link
+        else { return }
+        checkListVC.link = link
     }
 
     // MARK: - Table view data source
@@ -87,50 +95,97 @@ final class LinkListViewController: UITableViewController {
         return UISwipeActionsConfiguration(actions: [doneAction, editAction, deleteAction])
     }
 
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        showActionsAlert(for: getLink(by: indexPath))
+    }
 
     /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
+     // MARK: - Navigation
+
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+
+}
+
+
+// MARK: - Some helpers
+extension LinkListViewController {
+    /// Get link by row index from siteList
+    private func getLink(by indexPath: IndexPath) -> Link {
+        linkList[indexPath.row]
     }
-    */
 
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+    /// Get link table index path by site object
+    private func getIndexPath(for link: Link) -> IndexPath? {
+        guard let linkIndex = linkList.firstIndex(of: link) else { return nil }
+        return IndexPath(row: linkIndex, section: 0)
     }
-    */
+}
 
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
+// MARK: - Actions alert extension
+extension LinkListViewController {
+    private func showActionsAlert(for link: Link) {
 
+        let alert = UIAlertController(title: site.host, message: nil, preferredStyle: .actionSheet)
+
+        let goToChecListAction = UIAlertAction(title: "Go to check list", style: .default) {_ in
+            self.goToCheckList(link)
+        }
+
+        let showWebAction = UIAlertAction(title: "Open url in browser", style: .default) {_ in
+            self.openWeb(link)
+        }
+
+        let deleteAction = UIAlertAction(title: "Delete link", style: .destructive) {_ in
+            self.showDeleteAlert(for: link)
+        }
+
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel)
+
+        alert.addAction(goToChecListAction)
+        alert.addAction(showWebAction)
+        alert.addAction(deleteAction)
+        alert.addAction(cancelAction)
+
+        present(alert, animated: true)
     }
-    */
 
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
+    /// Show delete confirm modal
+    private func showDeleteAlert(for link: Link) {
+        let alertMessage = "Are you sure? This action delete site inside app, all related links and checks"
+
+        let alert = UIAlertController.createDeleteAlert(withTitle: "Delete \(link.url)?", andMessage: alertMessage) {
+            self.delete(link: link) {
+                //                guard let indexPath = self.getIndexPath(for: link) else { return }
+                //                self.tableView.deleteRows(at: [indexPath], with: .automatic)
+            }
+        }
+        self.present(alert, animated: true)
     }
-    */
+}
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+// MARK: - Actions
+extension LinkListViewController {
+    /// Link delete action
+    private func delete(link: Link, completion: () -> ()) {
+        StorageManager.shared.delete(link)
+        completion()
     }
-    */
+
+    /// Open link in safari browser
+    private func openWeb(_ link: Link) {
+        guard let url = URL(string: link.url) else { return }
+        let safariVC = SFSafariViewController(url: url)
+        present(safariVC, animated: true)
+    }
+
+    private func goToCheckList(_ link: Link) {
+        performSegue(withIdentifier: "goToLinkDetail", sender: link)
+    }
+
 
 }

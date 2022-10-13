@@ -65,10 +65,42 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Links" id="xVq-Er-15b"/>
+                    <connections>
+                        <segue destination="LQm-el-xCq" kind="show" identifier="goToLinkDetail" id="LEm-3V-iDG"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yUu-7L-Xy7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1311" y="363"/>
+        </scene>
+        <!--Check List View Controller-->
+        <scene sceneID="4EB-nv-KWt">
+            <objects>
+                <tableViewController id="LQm-el-xCq" customClass="CheckListViewController" customModule="MySiteOk" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="QZg-Is-ZQO">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="checkCell" id="f0S-WB-WvY">
+                                <rect key="frame" x="0.0" y="50" width="390" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="f0S-WB-WvY" id="NF9-8a-9H8">
+                                    <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="LQm-el-xCq" id="fRl-rg-GIs"/>
+                            <outlet property="delegate" destination="LQm-el-xCq" id="BDi-mJ-JUK"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="ghf-WL-4tZ"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8zw-SO-OC1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2097" y="363"/>
         </scene>
         <!--Add Url View Controller-->
         <scene sceneID="wZd-lD-ybR">
