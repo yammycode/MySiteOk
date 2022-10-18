@@ -8,9 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		C810D71D28F1AAB30065E788 /* AddUrlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C810D71C28F1AAB30065E788 /* AddUrlViewController.swift */; };
+		C898B2A828FAD29F0011C5A2 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C898B2A728FAD29F0011C5A2 /* HistoryViewController.swift */; };
 		C89D7DB728F8421C00FC6680 /* CheckListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89D7DB628F8421C00FC6680 /* CheckListViewController.swift */; };
 		C8BB5CEC28F0541500E0224A /* SiteListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BB5CEB28F0541500E0224A /* SiteListViewController.swift */; };
 		C8BB5CEF28F05CA800E0224A /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BB5CEE28F05CA800E0224A /* StorageManager.swift */; };
+		C8C0453628FD6B49006643F5 /* Extension + RealmResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C0453528FD6B49006643F5 /* Extension + RealmResults.swift */; };
 		C8C1680828F4922D001D2F84 /* LinkListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C1680728F4922D001D2F84 /* LinkListViewController.swift */; };
 		C8DEA89F28F49C2D00DEBCEB /* Extension + UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DEA89E28F49C2D00DEBCEB /* Extension + UIAlertController.swift */; };
 		C8FB8BB528EF16E400FBD9E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FB8BB428EF16E400FBD9E2 /* AppDelegate.swift */; };
@@ -27,9 +29,11 @@
 
 /* Begin PBXFileReference section */
 		C810D71C28F1AAB30065E788 /* AddUrlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUrlViewController.swift; sourceTree = "<group>"; };
+		C898B2A728FAD29F0011C5A2 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		C89D7DB628F8421C00FC6680 /* CheckListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckListViewController.swift; sourceTree = "<group>"; };
 		C8BB5CEB28F0541500E0224A /* SiteListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteListViewController.swift; sourceTree = "<group>"; };
 		C8BB5CEE28F05CA800E0224A /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		C8C0453528FD6B49006643F5 /* Extension + RealmResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + RealmResults.swift"; sourceTree = "<group>"; };
 		C8C1680728F4922D001D2F84 /* LinkListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkListViewController.swift; sourceTree = "<group>"; };
 		C8DEA89E28F49C2D00DEBCEB /* Extension + UIAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIAlertController.swift"; sourceTree = "<group>"; };
 		C8FB8BB128EF16E400FBD9E2 /* MySiteOk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySiteOk.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				C8DEA89E28F49C2D00DEBCEB /* Extension + UIAlertController.swift */,
+				C8C0453528FD6B49006643F5 /* Extension + RealmResults.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -120,6 +125,7 @@
 				C810D71C28F1AAB30065E788 /* AddUrlViewController.swift */,
 				C8C1680728F4922D001D2F84 /* LinkListViewController.swift */,
 				C89D7DB628F8421C00FC6680 /* CheckListViewController.swift */,
+				C898B2A728FAD29F0011C5A2 /* HistoryViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -224,6 +230,7 @@
 				C89D7DB728F8421C00FC6680 /* CheckListViewController.swift in Sources */,
 				C810D71D28F1AAB30065E788 /* AddUrlViewController.swift in Sources */,
 				C8FB8BB528EF16E400FBD9E2 /* AppDelegate.swift in Sources */,
+				C898B2A828FAD29F0011C5A2 /* HistoryViewController.swift in Sources */,
 				C8FB8BD128EF182900FBD9E2 /* Check.swift in Sources */,
 				C8FB8BCD28EF17DC00FBD9E2 /* Site.swift in Sources */,
 				C8BB5CEF28F05CA800E0224A /* StorageManager.swift in Sources */,
@@ -231,6 +238,7 @@
 				C8DEA89F28F49C2D00DEBCEB /* Extension + UIAlertController.swift in Sources */,
 				C8FB8BB728EF16E400FBD9E2 /* SceneDelegate.swift in Sources */,
 				C8FB8BCF28EF17EC00FBD9E2 /* Link.swift in Sources */,
+				C8C0453628FD6B49006643F5 /* Extension + RealmResults.swift in Sources */,
 				C8BB5CEC28F0541500E0224A /* SiteListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

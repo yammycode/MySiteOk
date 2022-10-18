@@ -42,11 +42,7 @@ class CheckListViewController: UITableViewController {
 
         var content = cell.defaultContentConfiguration()
 
-        if let statusCode = check.statusCode {
-            content.text = "\(statusCode.formatted()): \(HTTPURLResponse.localizedString(forStatusCode: statusCode))"
-        } else {
-            content.text = check.customErrorText ?? "Unknown ERROR"
-        }
+        content.text = check.statusCodeDescription
         content.secondaryText = dateFormatter.string(from: check.date)
 
         cell.contentConfiguration = content
